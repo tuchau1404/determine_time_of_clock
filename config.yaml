@@ -1,0 +1,33 @@
+image_path: "images/right_angle/6.png"
+
+color_thresholds:
+  dark_blue:
+    lower: [90, 0, 0]
+    upper: [150, 255, 120]
+  red:
+    lower1: [0, 70, 50]
+    upper1: [10, 255, 255]
+    lower2: [160, 70, 50]
+    upper2: [180, 255, 255]
+  black:
+    lower: [0, 0, 0]
+    upper: [180, 255, 80]
+
+circle_detection:
+  dp: 1.2
+  minDist: 100
+  param1: 100
+  param2: 30
+  minRadius: 50
+  maxRadius: 300
+
+crop:
+  resize_to: [200, 200]
+
+mask:
+  radius: 50
+  center_padding: 20  # for avoiding detection of clock center in hands
+
+visualization:
+  show_original: true
+  show_debug: false

@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Reload the image
-image_path = "images\\right_angle\\5.png"
+image_path = "images\\right_angle\\8_20.5.png"
 image = cv2.imread(image_path)
 
 # Convert to HSV for color thresholding
